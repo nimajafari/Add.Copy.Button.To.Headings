@@ -8,14 +8,14 @@ function addCopyIconsToHeadings() {
     copyIconSpan.innerHTML = '&#128203;'; // Unicode character for the copy icon
     copyIconSpan.style.cursor = 'pointer';
     copyIconSpan.style.marginLeft = '8px'; // Adjust margin as needed
-    copyIconSpan.style.opacity = '0.2'; // Change the icon opacity to 1.0 on hover
+    copyIconSpan.style.opacity = '0.3';
 
     heading.addEventListener('mouseover', function() {
-        copyIconSpan.style.opacity = '1';
+        copyIconSpan.style.opacity = '1';  // Change the icon opacity to 1.0 on hover
     });
 
     heading.addEventListener('mouseout', function() {
-        copyIconSpan.style.opacity = '0.2';
+        copyIconSpan.style.opacity = '0.3';
     });
 
     // Add click event listener to copy the heading's ID to the clipboard and show a toast
