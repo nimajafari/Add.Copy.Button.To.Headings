@@ -17,7 +17,6 @@ function addCopyIconsToHeadings() {
     copyIconSpan.addEventListener('click', () => {
       const idToCopy = heading.id;
       const currentPage = window.location.href;
-      const modifiedPage = currentPage + '#';
       if (idToCopy) {
         navigator.clipboard.writeText(currentPage + '#' + idToCopy).then(() => {
           showToast('Link copied successfully!');
