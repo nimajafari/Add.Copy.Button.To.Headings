@@ -16,8 +16,10 @@ function addCopyIconsToHeadings() {
     // Add click event listener to copy the heading's ID to the clipboard and show a toast
     copyIconSpan.addEventListener('click', () => {
       const idToCopy = heading.id;
+      const currentPage = window.location.href;
+      const modifiedPage = currentPage + '#';
       if (idToCopy) {
-        navigator.clipboard.writeText(idToCopy).then(() => {
+        navigator.clipboard.writeText(currentPage + '#' + idToCopy).then(() => {
           showToast('Link copied successfully!');
         }).catch((err) => {
           console.error('Error copying ID to clipboard:', err);
