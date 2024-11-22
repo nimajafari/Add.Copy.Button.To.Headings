@@ -1,5 +1,5 @@
 # Add.Copy.Button.To.Headings
-Add a copy icon to all headings that have IDs automatically
+Add a copy icon to all headings (h1, h2, h3, h4, h5, h6) address that have IDs automatically. Example: https:example.com/page-address#heading-id
 
 ```javascript
 function addCopyIconsToHeadings() {
